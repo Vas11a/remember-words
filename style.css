@@ -120,9 +120,3 @@ textarea{
   border-radius: 30px;
 }
 
-
-@media screen and (max-width: 400px) {
-  body{
-    background-color: green;
-  }
-}
