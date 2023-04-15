@@ -87,7 +87,7 @@ const know = () => {
     return
   }
   resArr.forEach((elem, idx) => {
-    if (elem.en === engl) {
+    if (elem.en === engl || elem.en === rus) {
       resArr.splice(idx,1)
     }
   });
@@ -112,6 +112,12 @@ const dknow = () => {
   card.classList.remove('openCard')
   rus = resArr[rand].ru
   engl = resArr[rand].en
+  let randSing = Math.round(Math.random())
+  if (randSing === 0) {
+    let engl2 = engl
+    engl = rus
+    rus = engl2
+  }
   card.innerText = engl
 }
 
