@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Words remember app</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Words remember game</h1>
+    <div class="list-pack">
+
+    </div>
+    <div class="input-block">
+      <textarea></textarea>
+      <div class="play" onclick="play()">Play</div>
+    </div>
+    <div class="card-block">
+      <div class="d-now" onclick="dknow()">Dont Know</div>
+      <div class="card" onclick="openCard()">
+        English
+      </div>
+      <div class="now" onclick="know()">Know</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
