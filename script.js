@@ -95,6 +95,12 @@ const know = () => {
   card.classList.remove('openCard')
   rus = resArr[rand].ru
   engl = resArr[rand].en
+  let randSing = Math.round(Math.random())
+  if (randSing === 0) {
+    let engl2 = engl
+    engl = rus
+    rus = engl2
+  }
   card.innerText = engl
 }
 
