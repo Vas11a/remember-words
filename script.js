@@ -60,6 +60,8 @@ const play = () => {
 
     } else if (elem === '_') {
       word += ' ';
+    } else if (elem === '=') {
+      word+='-'
     } else {
       word += elem;
     } 
