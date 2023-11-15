@@ -21,20 +21,6 @@ const openCard = () =>{
 
 
 const play = () => {
-  if (input.value.includes('hide""')) {
-    hideData()
-    return
-  } else if (input.value.includes('get""')) {
-    getData();
-    return
-  } else if (input.value.includes('push"')) {
-    pushData();
-    return
-  } else if (input.value.includes('rules""')) {
-    alert('test-test ,test = "1)test-test_,test"')
-    input.value = '';
-    return
-  }
   resArr = []
   if (card.classList.contains('openCard')) {
     card.classList.remove('openCard')
